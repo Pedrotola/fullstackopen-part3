@@ -6,17 +6,25 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
+    "lint": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "backend"
   ],
   "author": "Pedro Tola",
-  "license": "MIT",
+  "license": "ISC",
+  "devDependencies": {
+    "@stylistic/eslint-plugin-js": "^2.1.0",
+    "eslint": "^9.4.0",
+    "globals": "^15.6.0",
+    "nodemon": "^3.1.3"
+  },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "morgan": "^1.10.0",
-    "nodemon": "^3.1.3"
+    "mongoose": "^8.4.1",
+    "morgan": "^1.10.0"
   }
 }
